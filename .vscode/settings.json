@@ -1,0 +1,6 @@
+// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию и пользовательские параметры.
+{
+//C:\Users\User\AppData\Roaming\Code\User    
+    "window.openFilesInNewWindow": false,
+    "window.reopenFolders": "one"
+}
