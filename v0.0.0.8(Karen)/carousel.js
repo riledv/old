@@ -16,8 +16,18 @@ leftButton.style.opacity=0;
 leftGrad.style.opacity=0;
 leftButton.style.display='none';
 
+var lis=carousel.querySelectorAll('li');
+
+for (var i = 0; i < lis.lenght; i++) {
+	lis[i].style.position='relative';
+	var span = document.createElement('id',span);
+	span.style.cssText = 'position:absolute;left:0;top:0';
+ 	span.innerHTML=i+1;
+ 	lis[i].appendChild(span);
+}
+
 carousel.querySelector('.footer-button-left').onclick = function() {
-// сдвиг влево	
+// сдвиг влево
 // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
 	position = Math.min(position + width * count, 0);
 	list.style.marginLeft = position + 'px';
@@ -48,10 +58,10 @@ carousel.querySelector('.footer-button-left').onclick = function() {
 carousel.querySelector('.footer-button-right').onclick = function() {
 // сдвиг вправо
 // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-	leftButton.style.transitionDuration=750+'ms';
-	rightButton.style.transitionDuration=750+'ms';
-	leftGrad.style.transitionDuration=750+'ms';
-	rightGrad.style.transitionDuration=750+'ms';
+	leftButton.style.transitionDuration=1000+'ms';
+	rightButton.style.transitionDuration=1000+'ms';
+	leftGrad.style.transitionDuration=1000+'ms';
+	rightGrad.style.transitionDuration=1000+'ms';
 	position = position - width * count;
 	list.style.marginLeft = position + 'px';
 	if ((listElems.length*width-(positionV-position))<389){
