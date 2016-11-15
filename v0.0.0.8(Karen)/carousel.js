@@ -78,7 +78,5 @@ carousel.querySelector('.footer-button-right').onclick = function() {
 	interval=setTimeout(function(){
 		leftButton.style.display='inline';
 	},0.999);
-	//leftButton.hidden=false;
-	//leftGrad.hidden=false;
 };
 
