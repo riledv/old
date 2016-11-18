@@ -1,7 +1,7 @@
 var width = 389; // ширина изображения
 var count = 1; // количество изображений
 var position = 0; // текущий сдвиг влево
-var positionV=document.documentElement.clientWidth ;
+var positionV=document.documentElement.clientWidth ;//видимая область(ширина экрана)
 var interval;
 
 var carousel = document.getElementById('carousel');
@@ -27,8 +27,6 @@ for (var i = 0; i < lis.lenght; i++) {
 }
 
 carousel.querySelector('.footer-button-left').onclick = function() {
-// сдвиг влево
-// последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
 	position = Math.min(position + width * count, 0);
 	list.style.marginLeft = position + 'px';
 	rightButton.style.opacity=0.999;
@@ -36,28 +34,20 @@ carousel.querySelector('.footer-button-left').onclick = function() {
 	interval=setTimeout(function(){
 		rightButton.style.display='inline';
 	},0.999);
-	//rightButton.hidden=false;
-	//rightGrad.hidden=false;
 	if(position==0){
 		leftButton.style.display='none';
 		leftButton.style.opacity=0;
 		leftGrad.style.opacity=0;
-		//leftButton.hidden=true;
-		//leftGrad.hidden=true;
 	}else{
 		leftButton.style.opacity=0.999;
 		leftGrad.style.opacity=0.999;
 		interval=setTimeout(function(){
 			leftButton.style.display='inline';
 		},0.999);
-		//leftButton.hidden=false;
-		//leftGrad.hidden=false;
 	}
 };
 
 carousel.querySelector('.footer-button-right').onclick = function() {
-// сдвиг вправо
-// последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
 	leftButton.style.transitionDuration=1000+'ms';
 	rightButton.style.transitionDuration=1000+'ms';
 	leftGrad.style.transitionDuration=1000+'ms';
@@ -70,8 +60,6 @@ carousel.querySelector('.footer-button-right').onclick = function() {
 		rightButton.style.display='none';
 		rightButton.style.opacity=0;
 		rightGrad.style.opacity=0;
-		//rightButton.hidden=true;
-		//rightGrad.hidden=true;
 	}
 	leftButton.style.opacity=0.999;
 	leftGrad.style.opacity=0.999;
