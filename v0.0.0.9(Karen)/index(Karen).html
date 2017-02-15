@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>"ИП Кукса"</title>
@@ -11,40 +11,42 @@
 			<div class="head-left-wrapper-logo">
 			</div>
 			<div class="head-left-wrapper-list-menu">
-				<ul> 
-					<li></li>
-					<li></li>
-					<li></li>
+				<ul>
+					<li><div>Главная</div></li>
+					<li><div>Работы</div></li>
+					<li><div>О нас</div></li>
 				</ul>
 			</div>	
 		</div>
 		<div class="head-right-wrapper">
 			<div class="head-right-wrapper-search">
+				<div class="head-right-wrapper-search-grid"><div>Хотите что-то найти?</div></div>
+				<div class="head-right-wrapper-search-buttom"></div>
 			</div>
-			<div class="head-left-wrapper-news"></div>
+			<div class="head-left-wrapper-news"><div>Новости</div></div>
 		</div>
 	</div>
-	<div class="main">
-		<div class="main-centre-wrapper">
-			<div class="main-centre-text"></div>
+	<div id="main" class="main">
+		<canvas id = "stars" width="1366" height="382"></canvas>
+		<div id = "cut" class="main-centre-wrapper">
+			<div class="main-centre-text">
+				<div>Вебик готов к покорению галактики</div>
+			</div>
 			<div class="main-centre-buttom">
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>
+						<div class="main-centre-buttom-number"><div>+7 (906) 603-63-33</div></div>
+					</li>
+					<li>
+						<div class="main-centre-buttom-mail"></div>
+						<div class="main-centre-buttom-phone">Отправить заявку</div>
+					</li>
 				</ul>
 			</div>
 		</div>
+		<script assync src="canvas.js"></script>
 	</div>
-		<div id="carousel" class="big-under">
-		<div id="gradientLeft" class="gradient-left">
-			<div id="leftButton" class="arrow footer-button-left"> 
-			</div>
-		</div>
-		<div id="gradientRight" class="gradient-right">
-			<div id="rightButton" class="arrow footer-button-right">
-			</div>
-		</div>
+	<div class="big-under">
 			<div class="footer">	
 				<div class="footer-list-last-projects">
 					<ul>
@@ -52,6 +54,22 @@
 							<div class="footer-list-last-projects-main-wrapper">
 								<div class="footer-list-last-projects-child-wrapper">
 									<div class="footer-list-last-projects-name">
+										<div>Разработка сайта csgokit.net</div>
+									</div>
+									<div class="footer-list-last-projects-date">
+										<div>12.12.2015</div>
+									</div>
+								</div>
+								<div class="footer-list-last-projects-link-full-size">
+									<div>Открыть</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-list-last-projects-main-wrapper">
+								<div class="footer-list-last-projects-child-wrapper">
+									<div class="footer-list-last-projects-name">
+										<div>Разработка сайта csgokit.net</div>
 									</div>
 									<div class="footer-list-last-projects-date">
 									</div>
@@ -64,6 +82,7 @@
 							<div class="footer-list-last-projects-main-wrapper">
 								<div class="footer-list-last-projects-child-wrapper">
 									<div class="footer-list-last-projects-name">
+										<div>Разработка сайта csgokit.net</div>
 									</div>
 									<div class="footer-list-last-projects-date">
 									</div>
@@ -76,6 +95,7 @@
 							<div class="footer-list-last-projects-main-wrapper">
 								<div class="footer-list-last-projects-child-wrapper">
 									<div class="footer-list-last-projects-name">
+										<div>Разработка сайта csgokit.net</div>
 									</div>
 									<div class="footer-list-last-projects-date">
 									</div>
@@ -85,39 +105,12 @@
 							</div>
 						</li>
 						<li>
-							<div class="footer-list-last-projects-main-wrapper">
-								<div class="footer-list-last-projects-child-wrapper">
-									<div class="footer-list-last-projects-name">
-									</div>
-									<div class="footer-list-last-projects-date">
-									</div>
-								</div>
-								<div class="footer-list-last-projects-link-full-size">
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="footer-list-last-projects-main-wrapper">
-								<div class="footer-list-last-projects-child-wrapper">
-									<div class="footer-list-last-projects-name">
-									</div>
-									<div class="footer-list-last-projects-date">
-									</div>
-								</div>
-								<div class="footer-list-last-projects-link-full-size">
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="footer-list-last-projects-main-wrapper">
-								<div class="footer-list-last-projects-child-wrapper">
-									<div class="footer-list-last-projects-name">
-									</div>
-									<div class="footer-list-last-projects-date">
-									</div>
-								</div>
-								<div class="footer-list-last-projects-link-full-size">
-								</div>
+							<div class="footer-list-last-projects-centre-big">
+								<div class="footer-list-last-projects-centre-big-up"></div>	
+								<div class="footer-list-last-projects-centre-big-under">
+									<div class="footer-list-last-projects-centre-big-under-long"></div>
+									<div class="footer-list-last-projects-centre-big-under-short"></div>
+								</div>			
 							</div>
 						</li>
 					</ul>
@@ -126,12 +119,15 @@
 		<div class="under-footer">
 			<div class="under-footer-copyright">
 				<div class="under-footer-copyright-simbol"></div>
-				<div class="under-footer-copyright-autor"></div>
+				<div class="under-footer-copyright-autor"><div>ООО "КвазарВебика"</div></div>
 			</div>
 			<div class="under-footer-license">
+				<ul>
+					<li><div>2016г.</div></li>
+					<li><div>412</div></li>
+				</ul>
 			</div>
 		</div>
-	<script src="carousel.js"></script>
 </div>
 </body>
 </html>
