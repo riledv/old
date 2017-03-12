@@ -89,9 +89,9 @@ body {
 	color: rgba(68, 67, 93, 1);
 }
 
-#osnovi:active {
+/*#osnovi:active {
 	border-bottom: 0.2vw solid rgba(68, 67, 93, 1);
-}
+}*/
 
 #osnovi {
    text-decoration: none;
