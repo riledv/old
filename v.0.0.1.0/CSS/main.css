@@ -1,0 +1,608 @@
+* {
+	margin: auto;
+	padding: 0;
+}
+
+body {
+	background: rgba(42,41,70,1);
+}
+
+#forkaen{
+	height: 100%;
+	width: 100%;
+}
+
+#stars, #centr, #raboti, #pol, #shapka, #text, #forma, #zvonok, #mail{
+	position: relative;
+}
+
+#stars{
+	z-index: 2;
+}
+
+#shapka {
+	z-index: 3;
+	position: absolute;
+	height: 16.5%;/*150*/
+	width: 100%;/*1461*/
+	background: linear-gradient(180deg, rgba(31, 30, 54, 1), rgba(31, 30, 54, 0) );
+}
+
+#levo {
+	position: absolute;
+	top: 26%;/*39*/
+	left: 2.6%;/*38*/
+	height:13.3%;/*20*/ 
+	width: 27.6%;/*403*/
+}
+
+#logo { 
+	position: absolute;
+	height: 100%;
+	width: 35.2%;/*142*/
+}
+
+#logo img {
+	top: 5%;
+	width: 81%;
+	height: 100%;
+	left: 12%;
+	position: absolute;
+
+}
+
+#menu {
+	position: absolute;
+	left: 47.8%;/*192*/
+	bottom: 12.5%;/*5*/
+	height: 75%;/*15*/
+	width: 66.3%;/*211*/
+	font-family: 'HelveticaNeueCyr Bold', sans-serif;
+	font-weight: bold;
+	font-size: 1.3vh;
+	font-size: 0.88vw;
+	text-align: center;
+}
+
+#menu ul {
+	height: 100%;
+	list-style: none;
+}
+
+#menu ul li {
+	display: table;
+	float: left;
+	margin-left: 12.3%;/*26*/
+}
+
+#menu ul li:first-child {
+	margin-left: 0;
+}
+
+#menu ul li:last-child {
+	margin-left: 10.9%;/*23*/
+}
+
+#menu ul li div {
+	display: table-cell;
+  	vertical-align: middle;
+	color: rgba(68, 67, 93, 1);
+}
+
+#osnovi:active {
+	border-bottom: 0.2vw solid rgba(68, 67, 93, 1);
+}
+
+#osnovi {
+   text-decoration: none;
+   color: rgba(68, 67, 93, 1);
+}
+
+#punktir:link {
+	color: rgba(68, 67, 93, 1);;
+}
+
+#punktir:visited {
+	color: rgba(68, 67, 93, 1);;
+}
+
+#pravo {
+	position: absolute;
+	top: 24%;/*36*/
+	right: 2.6%;/*38*/
+	width: 9%;/*132*/
+	height: 16.7%;/*26*/
+	
+}
+
+#help {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: 'url(../Fonts/HelveticaNeueCyr-Roman.otf)', sans-serif;
+	font-size: 1vh;
+	font-size: 0.74vw;
+	text-align: center;
+}
+
+#help ul {
+	height: 100%;
+	list-style: none;
+}
+
+#help ul li {
+	border-radius: 0.3vh;
+	display: table;
+	float: left;
+	background: rgba(68, 67, 93, 1);
+	position: absolute;
+	width: 15.2%;/*26*/
+	height: 100%;
+}
+
+#help ul li:last-child {
+	width: 72.7%;/*96*/
+	left: 27.5%;/*36*/
+}
+
+#help ul li div {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 9%;
+	color: rgba(28, 27, 48, 1);
+}
+
+#help ul li div span {
+	position: relative;
+	top: 10%;
+}
+
+#lupa {
+	 text-align: center;
+}
+
+#lupa img {
+	position: absolute;
+	left: 22%;
+	bottom: 35%;
+	height: 50%;
+	width: 50%;
+}
+
+#centr {
+	position: absolute;
+	top: 16.5%;/*150*/
+	width: 100%;/*1461*/
+	height: 60.4%;/*547*/
+	background: rgba(42,41,70,1);
+}
+
+#forma {
+	z-index: 3;
+	position: relative;
+	top: 32.4%;/*177*/
+	width: 44.5%;/*650*/
+	height: 30.2%;/*165*/
+	font-family: 'url(../Fonts/HelveticaNeueCyr-Bold.otf)', sans-serif;
+	font-weight: bold;
+	font-size: 1.8vh;
+	font-size: 0.9vw;
+	text-align: center;
+}
+
+#text {
+	z-index: 3;
+	position: absolute;
+	width: 100%;
+	height: 32.1%;/*53*/
+	color: #e7dbed;
+	opacity: 0.9;
+}
+
+#text span {
+	font-size: 1.8vh;
+	font-size: 1.1vw;
+	color: rgba(209, 78, 92, 1);
+	opacity: 1;
+}
+
+#zvonok {
+	border-radius: 0.8vh;
+	position: absolute;
+	bottom: 0;
+	left: 18.9%;/*123*/
+	height: 27.3%;/*45*/
+	width: 27.7%;/*180*/ 
+	background: linear-gradient(90grad, rgba(216, 62, 64, 1), rgba(218, 37, 83, 1));
+	text-align: center;
+	font-family: 'url(../Fonts/HelveticaNeueCyr-Roman.otf)', sans-serif;
+	font-size: 0.8vh;
+	font-size: 0.8vw;
+	border: none;
+	text-shadow: 0 0.2vh 0 rgba(255, 255, 255, 0.18), 0 -0.2vh 0 rgba(0, 0, 0, 0.18);
+}
+
+#zvonok:focus {
+    outline: none;
+}
+
+#zvonok span{
+	text-align: center;
+	font-family: 'url(../Fonts/HelveticaNeueCyr-Roman.otf)', sans-serif;
+	font-size: 0.8vh;
+	font-size: 0.8vw;
+	color: #e7dbed;
+}
+
+#ramka {
+	border-radius: 0.8vh;
+	position: absolute;
+	bottom: 0;
+	left: 53.4%;/*347*/
+	height: 27.3%;/*45*/
+	width: 27.7%;/*180*/ 
+	background: linear-gradient(90deg, rgba(216, 62, 64, 1), rgba(218, 37, 83, 1));
+}
+
+#mail {
+	border-radius: 0.8vh;
+	position: relative;
+	top: 4.2%;
+	height: 91%;/*41*/
+	width: 98.5%;/*176*/ 
+	background: rgba(64, 62, 99, 1);
+	border: none;
+	text-align: center;
+	font-family: 'url(../Fonts/HelveticaNeueCyr-Roman.otf)', sans-serif;
+	font-size: 0.8vh;
+	font-size: 0.8vw;
+	text-shadow: 0 0.2vh 0 rgba(255, 255, 255, 0.09), 0 -0.2vh 0 rgba(0, 0, 0, 0.14);
+}
+::-webkit-input-placeholder {
+color: rgba(111, 109, 140, 1);
+}
+
+:focus {
+color: rgba(111, 109, 140, 1);
+outline: none;
+}
+
+#raboti {
+	z-index: 3;
+	position: absolute;
+	top: 76.9%;/*697*/
+	left: 2.6%;/*38*/
+	width: 95%;/*1384*/
+	height: 19%;/*170*/
+	background: rgba(42,41,70,1);
+}
+
+#raboti ul {
+	height: 100%;
+	list-style: none;
+}
+
+#raboti ul li {
+	margin-right: 0.1%;/*2*/
+	height: 100%;
+	width: 21.7%;/*301*/
+	background: rgba(61,60,94,1);
+	float: left;
+}
+
+#raboti ul li:first-child {
+	border-radius:  0.3vh 0 0 0.3vh ;
+}
+
+#raboti ul li:last-child {
+	border-radius: 0 0.3vh 0.3vh 0;
+	width: 12.8%;/*175*/
+	margin-right: 0;
+	background: url(../Images/fon.png);
+}
+
+#vse {
+	position: relative;
+	top: 40%;
+	width: 44%;/*77*/
+	height: 20%;/*37*/
+	font-family: 'url(../Fonts/HelveticaNeueCyr-Roman.otf)', sans-serif;
+	font-weight: bold;
+	font-size: 0.8vh;
+	font-size: 0.8vw;
+	color: rgba(93, 92, 124, 1);
+}
+
+#vse span {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#vse img {
+	width: 12.6%;
+	height: 32.4%;
+	position: absolute;
+	bottom: 10.8%;
+	right: 0%;
+}
+
+#ssilka {
+	border-radius: 0.3vh;
+	position: relative;
+	right: 22.6%;/*196*/ 
+	top: 11.76%;/*20*/
+	width: 43.5%;/*131*/
+	height: 15.3%;/*26*/
+	background: rgba(54, 52, 87, 1);
+	text-align: center;
+	color: rgba(93, 92, 124, 1);
+	font-family: 'url(../Fonts/HelveticaNeueCyr-Roman.otf)', sans-serif;
+	font-size: 0.8vh;
+	font-size: 0.8vw;
+	vertical-align: middle;
+}
+
+#ssilka span {
+	position: relative;
+	top: 15%;
+}
+
+#tochki {
+	border-radius: 0.3vh;
+	position: relative;
+	left: 5.4%;
+	bottom: 3.5%;
+	width: 7.1%;/*26*/
+	height: 15.2%;/*26*/
+	background: rgba(54, 52, 87, 1);
+	text-align: center;
+}
+
+#tochki img {
+	position: absolute;
+	top: 45%;
+	right: 24%;
+	height: 12%;
+	width: 50%;
+}
+
+#strelka {
+	border-radius: 0.3vh;
+	position: relative;
+	left: 41%;/*196*/
+	top: 42.6%;
+	width: 7.1%;/*26*/
+	height: 15.2%;/*26*/
+	background: rgba(54, 52, 87, 1);
+}
+
+#strelka img {
+	position: absolute;
+	top: 25%;
+	right: 24%;
+	height: 47%;
+	width: 50%;
+}
+
+#pol {
+	z-index: 3;
+	position: absolute;
+	bottom: 0;
+	height: 4.3%;/*39*/
+	width: 100%;/*1461*/
+}
+
+#info {
+	position: absolute;
+	left: 2.88%;/*52*/
+	top: 30.8%;/*12*/
+	width: 25.7%;/*375*/
+	height: 41%;/*16*/
+	font-family: 'url(../Fonts/HelveticaNeueCyr-Roman.otf)', sans-serif;
+	font-size: 1.3vh;
+	font-size: 0.85vw;
+	text-align: center;
+}
+
+#info ul {
+	height: 100%;
+	list-style: none;
+}
+
+#cop {
+	height: 100%;
+	width: 3.5%;/*16*/
+	float: left;
+}
+
+#сopyright {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+#сopyright img {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#adres {
+	display: table;
+	float: left;
+	height: 100%;
+	width: 15.1%;/*66*/
+}
+
+#adres div {
+	display: table-cell;
+	vertical-align: middle;
+	color: rgba(115, 113, 156, 1);
+}
+
+#palka {
+	position: relative;
+	bottom: 5%;
+	float: left;
+	height: 100%;
+	width: 3%;/*16*/
+}
+
+#palochka {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+#palochka img {
+	height: 82.5%;
+	width: 8%;
+	vertical-align: middle;
+}
+
+#phraza {
+	display: table;
+	height: 100%;
+	width: 67%;/*277*/
+	float: left;
+}
+
+#phraza div {
+	display: table-cell;
+	vertical-align: middle;
+	color: rgba(115, 113, 156, 1);
+}
+
+#mnenie {
+	position: absolute;
+	right: 0.1%;/*52*/
+	top: 29%;/*12*/
+	width: 16%;/*217*/
+	height: 41%;/*16*/
+	font-family: 'HelveticaNeueCyr Roman', sans-serif;
+	font-size: 1vh;
+	font-size: 0.85vw;
+	text-align: center;
+}
+
+#mnenie ul {
+	height: 100%;
+	list-style: none;
+}
+
+#otziv {
+	display: table;
+	width: 72.6%;/*172*/
+	height: 100%;
+	float: left;
+}
+
+#otziv div {
+	display: table-cell;
+	vertical-align: middle;
+	color: rgba(115, 113, 156, 1);
+}
+
+#punktir {
+	text-decoration: none;
+    border-bottom: 0.1vw  dashed rgba(115, 113, 156, 1);
+}
+
+#punktir:link {
+	color: rgba(115, 113, 156, 1);
+}
+
+#punktir:visited {
+	color: rgba(115, 113, 156, 1);
+}
+
+#palka2 {
+	position: relative;
+	bottom: 10%;
+	height: 100%;
+	width: 2.5%;/*28*/
+	float: left;
+}
+
+#palochka2 {
+	height: 100%;
+	width: 100%;
+	 text-align: center;
+}
+
+#palochka2 img {
+	height: 82.3%;
+	width: 25%;
+	bottom: 6.25%;
+	vertical-align: middle;
+}
+
+#like {
+	float: left;
+	height: 100%;
+	width: 11%;/*16*/
+}
+
+#love {
+	height: 100%;
+	width: 100%;
+	 text-align: center;
+}
+
+#love img {
+	position: relative;
+	bottom: 10%;
+	width: 47%;
+	height: 82.3%;
+	vertical-align: middle;
+}
+
+#popUpNews {
+	position: absolute;
+	height: 20%;
+	width: 10%;
+	background: #ccc;
+	left: 87.3%;
+	top: 8.7%;
+	z-index: 100000000000000;
+	display: none;
+}
+
+#popUpRev {
+	position: absolute;
+ 	height: 25%;
+ 	width: 30%;
+ 	background: #ccc;
+ 	left: 65.7%;
+ 	top: 70.9%;
+ 	z-index: 100000000000000;
+ 	display: none;
+}
+#alertBuf {
+	position: absolute;
+ 	height: 7%;
+ 	width: 14%;
+ 	background: #777;
+ 	left: 25.5%;
+ 	top: 63%;
+ 	z-index: 100000000000000;
+ 	display: none;
+	font-size: 0.63vw;
+	color: #fff;
+}
+/*Руслан исправь абсолют*/
+#line-true {
+	position: absolute;
+	height: 15%;
+	z-index: 100000000000000;
+	width: 22.5%;
+	background: linear-gradient(to right, #44435d, #22213a);
+	left: 0.45%;
+	bottom: -25%;
+}
+#line-false {
+	/*Просто пустой блок, можно и без него, но это на взякий случай*/
+}
+/*Конец исправления абсолюта*/
